@@ -1,0 +1,237 @@
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 6955px;
+  /* 전체 높이 */
+}
+
+#section01 {
+  background: url(../img/05_gallery/background.jpg);
+  height: 6955px;
+}
+
+#section01 .logo {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section01 .gallery .line {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 1s;
+  margin-top: 20px;
+}
+#section01 .gallery .line span {
+  display: block;
+  height: 1px;
+  width: 0;
+  background: rgb(155, 154, 147);
+  transition: 1s;
+}
+#section01 .gallery:hover .line {
+  opacity: 1;
+}
+#section01 .gallery:hover .line span {
+  width: 100%;
+}
+
+#section01 .pic1 {
+  position: absolute;
+  top: 398px;
+  left: 159px;
+}
+
+#section01 .pic2 {
+  position: absolute;
+  top: 340px;
+  left: 807px;
+}
+
+#section01 .pic3 {
+  position: absolute;
+  top: 825px;
+  left: 1528px;
+}
+
+#section01 .pic4 {
+  position: absolute;
+  top: 1475px;
+  left: 159px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic4.on {
+  opacity: 1;
+}
+
+#section01 .pic5 {
+  position: absolute;
+  top: 1979px;
+  left: 964px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic5.on {
+  opacity: 1;
+}
+
+#section01 .pic6 {
+  position: absolute;
+  top: 1582px;
+  left: 1445px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic6.on {
+  opacity: 1;
+}
+
+#section01 .pic7 {
+  position: absolute;
+  top: 2669px;
+  left: 79px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic7.on {
+  opacity: 1;
+}
+
+#section01 .pic8 {
+  position: absolute;
+  top: 3105px;
+  left: 723px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic8.on {
+  opacity: 1;
+}
+
+#section01 .pic9 {
+  position: absolute;
+  top: 2761px;
+  left: 1286px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic9.on {
+  opacity: 1;
+}
+
+#section01 .pic10 {
+  position: absolute;
+  top: 3762px;
+  left: 163px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic10.on {
+  opacity: 1;
+}
+
+#section01 .pic11 {
+  position: absolute;
+  top: 3999px;
+  left: 725px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic11.on {
+  opacity: 1;
+}
+
+#section01 .pic12 {
+  position: absolute;
+  top: 3884px;
+  left: 1205px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic12.on {
+  opacity: 1;
+}
+
+#section01 .pic13 {
+  position: absolute;
+  top: 4753px;
+  left: 79px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic13.on {
+  opacity: 1;
+}
+
+#section01 .pic14 {
+  position: absolute;
+  top: 4991px;
+  left: 885px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic14.on {
+  opacity: 1;
+}
+
+#section01 .pic15 {
+  position: absolute;
+  top: 4850px;
+  left: 1285px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic15.on {
+  opacity: 1;
+}
+
+#section01 .pic16 {
+  position: absolute;
+  top: 6046px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic16.on {
+  opacity: 1;
+}
+
+#section01 .pic17 {
+  position: absolute;
+  top: 5827px;
+  left: 845px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic17.on {
+  opacity: 1;
+}
+
+#section01 .pic18 {
+  position: absolute;
+  top: 5761px;
+  left: 1285px;
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .pic18.on {
+  opacity: 1;
+}
+
+#section01 .epnum {
+  margin-top: 25px;
+}
+
+#section01 .eptitle {
+  margin-top: 20px;
+}
+
+#section01 .pic16 .set {
+  margin-left: 30px;
+}
+
+#section01 .pic16 .line {
+  margin-left: 30px;
+}

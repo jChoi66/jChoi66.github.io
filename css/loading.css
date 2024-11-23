@@ -1,0 +1,85 @@
+#loading {
+  background: url(../img/00_loading/background.jpg) center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#loading .logo {
+  position: absolute;
+  top: 248px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#loading .scalebar {
+  position: relative;
+  top: 495px;
+  left: 0;
+  width: 1920px;
+}
+
+#loading .scale {
+  position: absolute;
+  left: 0px;
+  animation:moveScale 5s ease-in-out infinite alternate;
+}
+@keyframes moveScale {
+	from {left: -10px;}
+	to {left: calc(1920px - 2328px);}
+}
+
+#loading .star {
+  position: absolute;
+  top: 483px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#loading .star.rotate {
+  animation: rotate 1.2s ease-in
+}
+@keyframes rotate {
+  from {transform: translateX(-50%) rotate(0deg);}
+  to {transform: translateX(-50%) rotate(360deg);}
+}
+
+#loading .button {
+  position: absolute;
+  top: 654px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 199px;
+  height: 54px;
+  background: url(../img/00_loading/button.png);
+  cursor: pointer;
+}
+
+#loading .button .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#loading .button .aleft {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+#loading .button .aleft.on {
+  left: -20px;
+}
+
+#loading .button .aright {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+#loading .button .aright.on {
+  right: -20px;
+}

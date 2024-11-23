@@ -1,0 +1,791 @@
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'fcaslon';
+  src: url(../font/itc-founders-caslon-12-roman.ttf) format('truetype');
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100vw;
+  height: 10696px;
+  background: rgb(23, 29, 31);
+  /* 전체 높이 */
+}
+
+#header.dark {
+  filter: invert(1);
+}
+
+#topbutton {
+  position: fixed;
+  bottom: 150px;
+  right: 114px;
+  z-index: 90;
+  opacity: 0;
+  transition: .5s;
+  cursor: pointer;
+}
+#topbutton.on {
+  opacity: 1;
+}
+
+#section01 {
+  background: url(../img/01_main/background1.jpg) center;
+  height: 2981px;
+}
+
+#section01 .mistleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveleft 2s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes moveleft {
+  from {left: 0; opacity: 1;}
+  to {left: -1800px; opacity: 0;}
+}
+
+#section01 .mistright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: moveright 2s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes moveright {
+  from {right: 0; opacity: 1;}
+  to {right: -1350px; opacity: 0;}
+}
+
+#section01 .logo {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section01 .title {
+  position: absolute;
+  top: 353px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .1;
+  transition: 2.2s;
+}
+#section01 .title.on {
+  opacity: .7;
+}
+
+#section01 .scroll {
+  position: absolute;
+  top: 842px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section01 .anchor {
+  position: absolute;
+  top: 872px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section01 .line {
+  position: absolute;
+  top: 1221px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+  overflow: hidden;
+}
+
+#section01 .mtitle {
+  position: absolute;
+  top: 1838px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section01 .mtitle.on {
+  opacity: 1;
+}
+
+#section01 .paragraph01 {
+  position: absolute;
+  top: 1903px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section01 .paragraph01 li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#section01 .paragraph01 li+li {
+  margin-top: 20px;
+}
+#section01 .paragraph01 li .p07 {
+  margin-bottom: -8px;
+}
+#section01 .paragraph01 li:nth-child(5) {
+  margin-top: 40px;
+}
+#section01 .paragraph01 li:nth-child(6) {
+  margin-top: 180px;
+}
+#section01 .paragraph01 li div+div {
+  margin-left: 20px;
+}
+#section01 .paragraph01 li .p12 {
+  margin-bottom: -24px;
+}
+#section01 .paragraph01 li div {
+  opacity: .1;
+  transition: .5s;
+}
+
+#section02 {
+  background: rgb(23, 29, 31);
+  height: 1973px;
+}
+
+#section02 .line {
+  position: absolute;
+  top: -228px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+  overflow: hidden;
+}
+
+#section02 .mtitle {
+  position: absolute;
+  top: 235px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section02 .mtitle.on {
+  opacity: 1;
+}
+
+#section02 .text01 {
+  position: absolute;
+  top: 332px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section02 .text01.on {
+  opacity: 1;
+}
+
+#section02 .text02 {
+  position: absolute;
+  top: 404px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section02 .text02.on {
+  opacity: 1;
+}
+
+#section02 .about_pic {
+  position: absolute;
+  top: 542px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section02 .about_pic.on {
+  opacity: 1;
+}
+
+#section02 .about_txt1 {
+  position: absolute;
+  top: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section02 .about_txt1.on {
+  opacity: 1;
+}
+
+#section02 .about_txt2 {
+  position: absolute;
+  top: 1462px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section02 .about_txt2.on {
+  opacity: 1;
+}
+
+#section03 {
+  background: url(../img/01_main/background2.jpg) center;
+  height: 3966px;
+}
+
+#section03 .line {
+  position: absolute;
+  top: -171px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+  overflow: hidden;
+}
+
+#section03 .mtitle {
+  position: absolute;
+  top: 292px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section03 .mtitle.on {
+  opacity: 1;
+}
+
+/* #section03 .clippath {
+  
+} */
+
+#section03 .paragraph01 {
+  position: absolute;
+  font-family: 'fcaslon', serif;
+  font-size: 7.2rem;
+  color: rgb(84, 81, 74);
+  z-index: 50;
+}
+
+#section03 .paragraph01 p {
+  white-space: nowrap;
+  opacity: 0;
+  transition: 3s;
+}
+
+#section03 .paragraph01 .p01 {
+  position: absolute;
+  top: 410px;
+  left: 359px;
+}
+
+#section03 .paragraph01 .p02 {
+  position: absolute;
+  top: 504px;
+  left: 611px;
+  font-size: 9rem;
+  font-style: italic;
+  color: rgb(229, 222, 203);
+  animation: flicker 1.3s infinite alternate;
+}
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px rgb(229, 222, 203),
+      0 0 8px rgb(229, 222, 203),
+      0 0 12px rgb(229, 222, 203),
+      0 0 18px rgb(229, 222, 203),
+      0 0 23px rgb(229, 222, 203);
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+#section03 .paragraph01 .p03 {
+  position: absolute;
+  top: 611px;
+  left: 179px;
+}
+
+#section03 .paragraph01 .p04 {
+  position: absolute;
+  top: 700px;
+  left: 142px;
+}
+
+#section03 .paragraph01 .p05 {
+  position: absolute;
+  top: 790px;
+  left: 323px;
+}
+
+#section03 .paragraph01 .p06 {
+  position: absolute;
+  top: 880px;
+  left: 251px;
+}
+
+#section03 .paragraph01 .p07 {
+  position: absolute;
+  top: 970px;
+  left: 539px;
+}
+
+#section03 .paragraph01 .p08 {
+  position: absolute;
+  top: 1060px;
+  left: 683px;
+}
+
+#section03 .paragraph01 .p09_1 {
+  position: absolute;
+  top: 1153px;
+  left: 791px;
+  font-size: 9rem;
+  font-style: italic;
+  color: rgb(229, 222, 203);
+  animation: flicker 1.7s infinite alternate;
+}
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px rgb(229, 222, 203),
+      0 0 8px rgb(229, 222, 203),
+      0 0 12px rgb(229, 222, 203),
+      0 0 18px rgb(229, 222, 203),
+      0 0 23px rgb(229, 222, 203);
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+#section03 .paragraph01 .p09_2 {
+  position: absolute;
+  top: 1165px;
+  left: 1404px;
+}
+
+#section03 .paragraph01 .p10 {
+  position: absolute;
+  top: 1260px;
+  left: 719px;
+}
+
+#section03 .paragraph01 .p11 {
+  position: absolute;
+  top: 1530px;
+  left: 323px;
+}
+
+#section03 .paragraph01 .p12 {
+  position: absolute;
+  top: 1620px;
+  left: 143px;
+}
+
+#section03 .paragraph01 .p13 {
+  position: absolute;
+  top: 1714px;
+  left: 539px;
+  font-size: 9rem;
+  font-style: italic;
+  color: rgb(229, 222, 203);
+  animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px rgb(229, 222, 203),
+      0 0 8px rgb(229, 222, 203),
+      0 0 12px rgb(229, 222, 203),
+      0 0 18px rgb(229, 222, 203),
+      0 0 23px rgb(229, 222, 203);
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+#section03 .paragraph01 .p14 {
+  position: absolute;
+  top: 1820px;
+  left: 251px;
+}
+
+#section03 .paragraph01 .p15 {
+  position: absolute;
+  top: 1910px;
+  left: 1115px;
+}
+
+#section03 .paragraph01 .p16 {
+  position: absolute;
+  top: 2001px;
+  left: 971px;
+}
+
+#section03 .paragraph01 .p17 {
+  position: absolute;
+  top: 2090px;
+  left: 647px;
+}
+
+#section03 .paragraph01 .p18 {
+  position: absolute;
+  top: 2181px;
+  left: 899px;
+}
+
+#section03 .paragraph01 .p19 {
+  position: absolute;
+  top: 2271px;
+  left: 503px;
+}
+
+#section03 .paragraph01 .p20 {
+  position: absolute;
+  top: 2360px;
+  left: 359px;
+}
+
+#section03 .paragraph01 .p21 {
+  position: absolute;
+  top: 2453px;
+  left: 179px;
+  font-size: 9rem;
+  font-style: italic;
+  color: rgb(229, 222, 203);
+  animation: flicker 1.6s infinite alternate;
+}
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px rgb(229, 222, 203),
+      0 0 8px rgb(229, 222, 203),
+      0 0 12px rgb(229, 222, 203),
+      0 0 18px rgb(229, 222, 203),
+      0 0 23px rgb(229, 222, 203);
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+#section03 .paragraph01 .p22 {
+  position: absolute;
+  top: 2560px;
+  left: 539px;
+}
+
+#section03 .paragraph01 .p23 {
+  position: absolute;
+  top: 2830px;
+  left: 683px;
+}
+
+#section03 .paragraph01 .p24 {
+  position: absolute;
+  top: 2920px;
+  left: 323px;
+}
+
+#section03 .paragraph01 .p25 {
+  position: absolute;
+  top: 3010px;
+  left: 755px;
+}
+
+#section03 .paragraph01 .p26 {
+  position: absolute;
+  top: 3100px;
+  left: 683px;
+}
+
+#section03 .paragraph01 .p27 {
+  position: absolute;
+  top: 3191px;
+  left: 935px;
+}
+
+#section03 .paragraph01 .p28 {
+  position: absolute;
+  top: 3460px;
+  left: 503px;
+}
+
+#section03 .paragraph01 .p29_1 {
+  position: absolute;
+  top: 3566px;
+  left: 323px;
+}
+
+#section03 .paragraph01 .p29_2 {
+  position: absolute;
+  top: 3550px;
+  left: 676px;
+  font-size: 9rem;
+  font-style: italic;
+  color: rgb(229, 222, 203);
+  animation: flicker 1.4s infinite alternate;
+}
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 5px rgb(229, 222, 203),
+      0 0 8px rgb(229, 222, 203),
+      0 0 12px rgb(229, 222, 203),
+      0 0 18px rgb(229, 222, 203),
+      0 0 23px rgb(229, 222, 203);
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+#section03 .wapic1 {
+  position: absolute;
+  top: 490px;
+  right: 123px;
+}
+
+#section03 .wapic2 {
+  position: absolute;
+  top: 1200px;
+  left: 175px;
+}
+
+#section03 .wapic3 {
+  position: absolute;
+  top: 1600px;
+  right: 149px;
+}
+
+#section03 .wapic4 {
+  position: absolute;
+  top: 2200px;
+  left: 235px;
+}
+
+#section03 .wapic5 {
+  position: absolute;
+  top: 2700px;
+  right: 200px;
+}
+
+#section03 .wapic6 {
+  position: absolute;
+  top: 3400px;
+  left: 166px;
+}
+
+#section04 {
+  background: url(../img/01_main/background3.jpg) center;
+  height: 1785px;
+}
+
+#section04 .line {
+  position: absolute;
+  top: -144px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  height: 0;
+  overflow: hidden;
+}
+
+#section04 .mtitle {
+  position: absolute;
+  top: 319px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section04 .mtitle.on {
+  opacity: 1;
+}
+
+#section04 .text01 {
+  position: absolute;
+  top: 458px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section04 .text01.on {
+  opacity: 1;
+}
+
+#section04 .text02 {
+  position: absolute;
+  top: 506px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section04 .text02.on {
+  opacity: 1;
+}
+
+#section04 .text03 {
+  position: absolute;
+  top: 581px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section04 .text03.on {
+  opacity: 1;
+}
+
+#section04 .text04 {
+  position: absolute;
+  top: 709px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section04 .text04.on {
+  opacity: 1;
+}
+
+#section04 .text05 {
+  position: absolute;
+  top: 850px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section04 .text05.on {
+  opacity: 1;
+}
+
+#section04 .text06 {
+  position: absolute;
+  top: 884px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+#section04 .text06.on {
+  opacity: 1;
+}
+
+#section04 .button {
+  position: absolute;
+  top: 1348px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 297px;
+  height: 67px;
+  background: url(../img/01_main/button/button.png);
+  cursor: pointer;
+}
+
+#section04 .button .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#section04 .button .aleft {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+#section04 .button .aleft.on {
+  left: -20px;
+}
+
+#section04 .button .aright {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+#section04 .button .aright.on {
+  right: -20px;
+}
+
+#section04 #footer {
+  position: absolute;
+  bottom: 80px;
+  width: 100vw;
+  height: 16px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+}
+
+#section04 #footer .language {
+  position: absolute;
+  margin-left: 114px;
+}
+
+#section04 #footer .license {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#section04 #footer .share {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  width: 214px;
+  height: 16px;
+  margin-right: 114px;
+}
+
+#section04 #footer .share li+li {
+  margin-left: 32px;
+}

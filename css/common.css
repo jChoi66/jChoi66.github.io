@@ -1,0 +1,111 @@
+#header {
+  position: fixed;
+  top: 68px;
+  left: 65px;
+  z-index: 100;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.menupage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 101;
+  width: 0;
+  height: 100vh;
+  transition: 1s;
+  overflow: hidden;
+}
+.menupage.on {
+  width: 100vw;
+}
+
+.menupage .main_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 980px;
+}
+
+.menupage .main_img li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.menupage .main_img li.on {
+  opacity: 1;
+}
+
+.menupage .paper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.menupage .logo {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 102;
+}
+
+.menupage .close {
+  position: absolute;
+  top: 65px;
+  right: 65px;
+  cursor: pointer;
+}
+
+.menupage .menutxt {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 1417px;
+  transition: .5s;
+}
+
+.menupage .menutxt li {
+  opacity: .3;
+  transition: .75s;
+}
+.menupage .menutxt li a {
+  display: flex;
+  align-items: center;
+}
+.menupage .menutxt li .arrow {
+  width: 0;
+  overflow: hidden;
+}
+
+.menupage .menutxt li.on {
+  opacity: 1;
+}
+.menupage .menutxt li.on .arrow {
+  width: 34px;
+  padding-right: 70px;
+  transition: 1s;
+}
+
+.menupage .menutxt li+li {
+  margin-top: 71px;
+}
+
+.menupage .share {
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 48px;
+  margin-right: 65px;
+}
+
+.menupage .share div+div {
+  margin-left: 43px;
+}

@@ -1,0 +1,345 @@
+.pop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.pop.on {
+  animation: 1s fadeIn;
+  display: block;
+  opacity: 1;
+}
+
+.popblack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  opacity: .5;
+}
+
+.popbackground {
+  position: relative;
+  top: 109px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1290px;
+  height: 721px;
+}
+
+.popbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 593px;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+}
+
+.popclose {
+  position: absolute;
+  top: 45px;
+  right: 39px;
+  cursor: pointer;
+}
+
+.epnumber {
+  position: absolute;
+  display: flex;
+  top: 162px;
+  left: 97px;
+}
+
+.epnumber div + div {
+  margin-left: 24px;
+}
+
+.epname {
+  position: absolute;
+  top: 207px;
+  left: 96px;
+}
+
+.epintro {
+  position: absolute;
+  top: 286px;
+  left: 96px;
+}
+
+.epintro div + div {
+  margin-top: 46px;
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 3210px;
+  /* 전체 높이 */
+}
+
+.logo {
+  position: fixed;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 98;
+}
+
+.compass {
+  position: fixed;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 98;
+}
+
+.bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 78px;
+  background: #000;
+  opacity: .5;
+  z-index: 96;
+}
+
+.bar .language {
+  position: absolute;
+  left: 68px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bar .line1 {
+  position: absolute;
+  left: 219px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 36px;
+  background: rgb(54, 54, 54);
+}
+
+.bar .imdb {
+  position: absolute;
+  left: 255px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bar .line2 {
+  position: absolute;
+  left: 330px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 58px;
+  background: rgb(108, 108, 108);
+}
+
+.bar .arrows {
+  position: relative;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 882px;
+  height: 13px;
+}
+
+.bar .leftarrow {
+  position: absolute;
+  display: flex;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bar .leftarrow div + div {
+  margin-left: 30px;
+}
+
+.bar .home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.bar .rightarrow {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bar .rightarrow div + div {
+  margin-left: 30px;
+}
+
+.bar .line3 {
+  position: absolute;
+  right: 428px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 58px;
+  background: rgb(108, 108, 108);
+}
+
+.bar .progress {
+  position: absolute;
+  right: 299px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bar .progress_bar {
+  position: absolute;
+  right: 53px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 204px;
+  height: 9px;
+}
+
+.bar .progress_bar .line {
+  position: relative;
+  left: 0;
+  bottom: 4px;
+  width: 204px;
+  height: 9px;
+}
+
+.bar .progress_bar .fill {
+  position: absolute;
+  left: 2px;
+  bottom: -1px;
+  width: 70px;
+  height: 2px;
+  background: rgb(245, 179, 64);
+}
+
+#section01 {
+  height: calc(4150px - 1920px + 980px);
+}
+
+.trigger01 {
+  height: calc(4150px - 1920px + 980px);
+}
+
+.fix01 {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/02_synopsis/background.jpg) center;
+  position: relative;
+}
+
+.horizontal01 {
+  width: 4150px;
+  height: 100vh;
+}
+
+#section01 .episode {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translateY(-50%);
+  z-index: 95;
+}
+
+#section01 .episode ul {
+  display: flex;
+}
+
+#section01 .episode li {
+  cursor: pointer;
+}
+
+#section01 .episode li + li {
+  margin-left: 100px;
+}
+
+#section01 .episode .img-border + img {
+  margin-top: 20px;
+}
+
+#section01 .episode .img-border {
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(128, 128, 128);
+}
+
+#section01 .episode .img-wrapper {
+  overflow: hidden;
+  padding: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(128, 128, 128);
+}
+
+#section01 .episode .img-wrapper img:hover {
+  transform: scale(1.1);
+  transition: transform .6s ease-in-out;
+}
+
+#section01 .ep1 {
+  margin-top: 93px;
+}
+
+#section01 .ep2 {
+  margin-top: 118px;
+}
+
+#section01 .ep3 {
+  margin-top: 92px;
+}
+
+#section01 .ep4 {
+  margin-top: 63px;
+}
+
+#section01 .ep5 {
+  margin-top: 88px;
+}
+
+#section01 .ep6 {
+  margin-top: 55px;
+}
+
+#section01 .ep7 {
+  margin-top: 118px;
+}
+
+#section01 .ep8 {
+  margin-top: 80px;
+}
+
+#section01 .ep9 {
+  margin-top: 112px;
+}
+
+#section01 .ep10 {
+  margin-top: 88px;
+}
+
+#section01 li img:nth-child(2) {
+  margin-left: 30px;
+}

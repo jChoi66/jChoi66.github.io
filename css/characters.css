@@ -1,0 +1,346 @@
+.popch1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.popch1.on {
+  animation: 1s fadeIn;
+  display: block;
+  opacity: 1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 980px;
+}
+
+.title {
+  position: absolute;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close {
+  position: absolute;
+  top: 65px;
+  right: 65px;
+  cursor: pointer;
+}
+
+.castname {
+  position: absolute;
+  top: 174px;
+  left: 406px;
+}
+
+.chname {
+  position: absolute;
+  top: 212px;
+  left: 336px;
+}
+
+.frameup {
+  position: absolute;
+  top: 295px;
+  left: 175px;
+}
+
+.framedown {
+  position: absolute;
+  top: 609px;
+  left: 710px;
+}
+
+.popch1 .introbox {
+  position: absolute;
+  top: 331px;
+  left: 236px;
+  width: 462px;
+  height: 242px;
+  overflow-y: auto;
+}
+
+.popch1 .introbox .intro {
+  width: 462px;
+  height: 100%;
+}
+
+.popch1 .intromore {
+  position: absolute;
+  top: 604px;
+  left: 466px;
+  opacity: 1;
+  transition: .5s;
+}
+.popch1 .intromore.on {
+  opacity: 0;
+}
+
+.poparrow {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 376px;
+  left: 784px;
+}
+
+.poparrow div + div {
+  margin-top: 8px;
+}
+
+.picset {
+  position: absolute;
+  display: flex;
+  top: 720px;
+  left: 175px;
+}
+
+.picset div + div {
+  margin-left: 22px;
+}
+
+.ch_line {
+  position: absolute;
+  top: 0px;
+  right: 195px;
+}
+
+.ch_list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 86px;
+  height: 412px;
+  top: 297px;
+  right: 88px;
+}
+
+.ch_list div + div {
+  margin-top: 48px;
+}
+
+.hbomax {
+  position: absolute;
+  bottom: 54px;
+  left: 63px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 98px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.anchor {
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imdb {
+  position: absolute;
+  bottom: 54px;
+  right: 80px;
+  opacity: .7;
+}
+
+.popch2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.popch2.on {
+  animation: 1s fadeIn;
+  display: block;
+  opacity: 1;
+}
+
+.popch2 .introbox {
+  position: absolute;
+  top: 331px;
+  left: 236px;
+  width: 484px;
+  height: 242px;
+  overflow-y: auto;
+}
+
+.popch2 .introbox .intro {
+  width: 484px;
+  height: 100%;
+}
+
+.popch2 .intromore {
+  position: absolute;
+  top: 604px;
+  left: 466px;
+  opacity: 1;
+  transition: .5s;
+}
+.popch2 .intromore.on {
+  opacity: 0;
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 2500px;
+  /* 전체 높이 */
+}
+
+.logo {
+  position: fixed;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 98;
+}
+  
+.search {
+  position: fixed;
+  top: 72px;
+  right: 65px;
+  z-index: 98;
+}
+
+.progress_bar {
+  position: fixed;
+  width: 684px;
+  height: 3px;
+  bottom: 123px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 98;
+}
+
+.progress_bar .line {
+  position: relative;
+  width: 684px;
+  height: 1px;
+  background: rgb(66, 66, 66);
+}
+
+.progress_bar .line .fill {
+  position: absolute;
+  width: 293px;
+  height: 3px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(132, 132, 132);
+}
+
+#section01 {
+  height: calc(3440px - 1920px + 980px);
+}
+
+.trigger01 {
+  height: calc(3440px - 1920px + 980px);
+}
+
+.fix01 {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+
+.horizontal01 {
+  width: 3440px;
+  height: 100vh;
+  display: flex;
+}
+
+#section01 .char {
+  display: flex;
+}
+
+#section01 .char li {
+  width: 350px;
+  height: 100vh;
+  position: relative;
+  background: #000;
+}
+#section01 .char li:hover div {
+  opacity: 1;
+}
+#section01 .char li .photo {
+  opacity: .3;
+  transition: .5s;
+}
+#section01 .char li .set {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 20px;
+  opacity: .4;
+  transition: .5s;
+}
+
+#section01 .set div + div {
+  margin-top: 30px;
+}
+
+#section01 .char .ch3 .set div:nth-child(1) {
+  margin-left: 10px;
+}
+
+#section01 .more {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 100vh;
+}
+#section01 .more .set {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(90%,-50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+#section01 .char .ch1 {
+  cursor: pointer;
+}
+
+#section01 .char .ch2 {
+  cursor: pointer;
+}

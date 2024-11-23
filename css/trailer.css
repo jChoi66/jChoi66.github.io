@@ -1,0 +1,153 @@
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 100vh;
+  /* 전체 높이 */
+}
+
+#section01 {
+  background: url(../img/04_trailer/background.jpg) center;
+  height: 100vh;
+}
+
+#section01 .title {
+  position: absolute;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section01 .box {
+  position: relative;
+  top: 131px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1790px;
+  height: 730px;
+  background-color: #000;
+  opacity: .5;
+}
+
+#section01 .tr1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 645px;
+  top: 175px;
+  left: 120px;
+}
+
+#section01 .tr1_wrapper {
+  position: absolute;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(128, 128, 128);
+}
+
+#section01 .tr1_vid {
+  padding: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(128, 128, 128);
+}
+
+#section01 .tr1_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#section01 .playpause {
+  background-image: url(../img/04_trailer/playbutton.png);
+  position: absolute;
+  width: 143px;
+  height: 117px;
+  top: 242px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-position: center;
+  display: none;
+}
+#section01 .playpause.on {
+  display: block;
+}
+
+.swiper {
+  position: absolute;
+  top: 170px;
+  right: 100px;
+  width: 580px;
+  height: 655px;
+  z-index: 500;
+}
+
+.swiper-slide {
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide div {
+  background: url(../img/04_trailer/ssbackground.png);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 476px;
+  height: 221px;
+  opacity: .5;
+  transition: .5s;
+}
+.swiper-slide img:hover {
+  opacity: 1;
+}
+
+.swiper-scrollbar-drag {
+  background: rgba(255, 255, 255, 0.4);
+  width: 3px;
+}
+
+#section01 .progress_bar {
+  position: fixed;
+  width: 3px;
+  height: 640px;
+  top: 177px;
+  right: 104px;
+  z-index: 100;
+}
+
+.progress_bar .line {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(66, 66, 66);
+}
+
+.hbomax {
+  position: absolute;
+  bottom: 40px;
+  left: 120px;
+}
+
+.share {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  right: 82px;
+}
+
+.share div + div {
+  margin-left: 43px;
+}
